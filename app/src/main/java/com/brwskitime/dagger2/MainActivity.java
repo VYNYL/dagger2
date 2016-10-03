@@ -1,9 +1,8 @@
 package com.brwskitime.dagger2;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Dagger2Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
