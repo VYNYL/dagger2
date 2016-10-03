@@ -12,6 +12,6 @@ public class Dagger2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        ((Dagger2)getApplication()).getBaseComponent().inject(this);
     }
 }
