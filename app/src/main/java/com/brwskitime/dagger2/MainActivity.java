@@ -1,8 +1,13 @@
 package com.brwskitime.dagger2;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import javax.inject.Inject;
+
 public class MainActivity extends Dagger2Activity {
+
+    @Inject SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
