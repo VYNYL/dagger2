@@ -22,8 +22,7 @@ public abstract class Dagger2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AppComponent appComponent = DaggerAppComponent.builder().appModule(new AppModule(getApplication())).build();
-        injectActivity(appComponent);
+        injectActivity(((Dagger2)getApplication()).getAppComponent());
     }
 
     @Override

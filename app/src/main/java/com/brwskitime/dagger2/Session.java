@@ -1,7 +1,6 @@
 package com.brwskitime.dagger2;
 
 import android.app.Application;
-import android.util.Log;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -19,7 +18,6 @@ public class Session {
 
     @Inject
     public Session(Application application) {
-        Log.i(TAG,"new Session");
         this.application = application;
     }
 }
