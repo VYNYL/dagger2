@@ -1,9 +1,7 @@
 package com.brwskitime.dagger2.injection;
 
-import android.app.Application;
 import android.content.SharedPreferences;
 
-import com.brwskitime.dagger2.Dagger2Activity;
 import com.brwskitime.dagger2.MainActivity;
 
 import javax.inject.Singleton;
@@ -16,7 +14,7 @@ import dagger.Component;
 
 @Singleton
 @Component(modules = {AppModule.class})
-public interface BaseComponent {
+public interface AppComponent {
     SharedPreferences sharedPreferences();
     void inject(MainActivity activity);
 }
