@@ -13,6 +13,7 @@ public class MainActivity extends Dagger2Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ((Dagger2)getApplication()).getBaseComponent().inject(this);
         prefs.edit().putBoolean("worked",true).apply();
     }
 }
