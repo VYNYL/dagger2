@@ -12,6 +12,7 @@ public class MainActivity extends Dagger2Activity {
 
     @Inject SharedPreferences prefs;
     @Inject Resources resources;
+    @Inject Session session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
