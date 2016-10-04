@@ -2,6 +2,7 @@ package com.brwskitime.dagger2.injection;
 
 import android.app.Application;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.preference.PreferenceManager;
 
 import javax.inject.Singleton;
@@ -33,5 +34,11 @@ public class AppModule {
     // Application reference must come from AppModule.class
     SharedPreferences providesSharedPreferences(Application application) {
         return PreferenceManager.getDefaultSharedPreferences(application);
+    }
+
+    @Provides
+    @Singleton
+    Resources providesResources(Application application) {
+        return application.getResources();
     }
 }
