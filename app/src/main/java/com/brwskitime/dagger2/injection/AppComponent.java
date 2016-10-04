@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 
 import com.brwskitime.dagger2.MainActivity;
+import com.brwskitime.dagger2.SecondActivity;
 import com.brwskitime.dagger2.Session;
 
 import javax.inject.Singleton;
@@ -21,4 +22,5 @@ public interface AppComponent {
     Resources resources();
     Session session();
     void inject(MainActivity activity);
+    void inject(SecondActivity activity);
 }
