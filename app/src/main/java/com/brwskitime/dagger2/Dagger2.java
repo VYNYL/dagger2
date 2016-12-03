@@ -19,6 +19,9 @@ public class Dagger2 extends Application {
     public void onCreate()
     {
         super.onCreate();
+        /*
+        Here's what makes the injected members singletons. The scope is really application scope.
+         */
         appComponent = DaggerAppComponent.builder().appModule(new AppModule(this)).build();
     }
 
