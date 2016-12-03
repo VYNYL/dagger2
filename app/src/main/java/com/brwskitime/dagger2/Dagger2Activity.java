@@ -7,9 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.brwskitime.dagger2.injection.AppModule;
 import com.brwskitime.dagger2.injection.AppComponent;
-import com.brwskitime.dagger2.injection.DaggerAppComponent;
 
 import butterknife.ButterKnife;
 
