@@ -39,6 +39,8 @@ public class NetModule {
         return client;
     }
 
+    @Provides
+    @Singleton
     Retrofit providesRetrofit(Gson gson, OkHttpClient okHttpClient) {
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create(gson))
